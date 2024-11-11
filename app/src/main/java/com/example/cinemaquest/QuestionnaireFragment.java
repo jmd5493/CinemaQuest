@@ -47,7 +47,7 @@ public class QuestionnaireFragment extends Fragment {
     };
 
     private TextView[] indicators;
-    private Button finishButton;
+     private Button finishButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
