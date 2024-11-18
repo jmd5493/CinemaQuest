@@ -11,13 +11,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Load the QuestionnaireFragment
+        // Load the PreQuestionnaireFragment
         if (savedInstanceState == null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, new QuestionnaireFragment());
+            fragmentTransaction.replace(R.id.fragment_container, new PreQuestionnaireFragment());
             fragmentTransaction.commit();
         }
     }
 }
-
