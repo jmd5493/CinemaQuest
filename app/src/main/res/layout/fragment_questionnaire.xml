@@ -94,6 +94,7 @@
                     android:text="10" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <!-- Question Text -->
         <TextView
             android:id="@+id/question_text"
@@ -105,35 +106,10 @@
 
         <!-- Answer Options -->
         <RadioGroup
-            android:id="@+id/radioGroup_answers"
+            android:id="@+id/answer_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/answer_option_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Action" />
-
-            <RadioButton
-                android:id="@+id/answer_option_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Comedy" />
-
-            <RadioButton
-                android:id="@+id/answer_option_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Drama" />
-
-            <RadioButton
-                android:id="@+id/answer_option_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sci-Fi" />
-        </RadioGroup>
+            android:orientation="vertical" />
 
         <!-- Navigation Buttons -->
         <LinearLayout
@@ -169,9 +145,3 @@
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
-
-
-
-
-
-
