@@ -115,7 +115,6 @@ public class QuestionnaireFragment extends Fragment {
             Intent intent = new Intent(requireActivity(), RecommendationActivity.class);
             startActivity(intent);
         });
-
         return view;
     }
 

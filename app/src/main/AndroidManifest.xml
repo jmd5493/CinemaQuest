@@ -25,5 +25,4 @@
         <activity android:name=".QuestionsActivity"/>
         <activity android:name=".RecommendationActivity"/>
     </application>
-
 </manifest>
