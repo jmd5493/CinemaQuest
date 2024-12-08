@@ -1,5 +1,6 @@
 package com.example.cinemaquest;
 
+import android.content.Intent;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -98,13 +99,21 @@ public class QuestionnaireFragment extends Fragment {
         });
 
         finishButton.setOnClickListener(v -> {
+            // Perform existing actions (saving answers, resetting questionnaire, etc.)
             saveCurrentAnswer();
             saveAnswers();
             displaySavedAnswers(); // Display the saved answers
+
             // Reset the questionnaire for a fresh start
             currentQuestion = 1;
             updateQuestion();
-            finishButton.setVisibility(View.GONE); // Hide the finish button after finishing
+
+            // Hide the finish button after finishing
+            finishButton.setVisibility(View.GONE);
+
+            // Start the RecommendationActivity from the Fragment using getActivity()
+            Intent intent = new Intent(requireActivity(), RecommendationActivity.class);
+            startActivity(intent);
         });
 
         return view;

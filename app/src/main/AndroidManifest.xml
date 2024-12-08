@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".login"/>
         <activity android:name=".QuestionsActivity"/>
+        <activity android:name=".RecommendationActivity"/>
     </application>
 
 </manifest>
