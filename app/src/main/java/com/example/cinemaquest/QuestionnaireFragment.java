@@ -28,32 +28,22 @@ public class QuestionnaireFragment extends Fragment {
     private DatabaseHelper2 dbHelper; // Declare dbHelper
 
     private String[] questions = {
-            "What is your favorite movie genre?",
-            "Which movie do you prefer?",
-            "What kind of movie ending do you like?",
-            "Which actor do you prefer?",
-            "What type of movie soundtrack do you enjoy?",
-            "Which movie setting do you prefer?",
-            "What kind of movie plot do you enjoy?",
-            "Which movie director do you prefer?",
-            "What movie length do you prefer?",
-            "Which movie era do you prefer?"
+            "What genre do you prefer?",
+            "What type of movie setting do you enjoy?",
+            "What is your favorite movie era?",
+            "What mood are you in?",
+            "What kind of storyline do you prefer?"
     };
 
     private String[][] answers = {
             {"Action", "Comedy", "Drama", "Sci-Fi"},
-            {"Inception", "Titanic", "The Godfather", "Star Wars"},
-            {"Happy", "Sad", "Cliffhanger", "Open-ended"},
-            {"Leonardo DiCaprio", "Tom Hanks", "Meryl Streep", "Scarlett Johansson"},
-            {"Classical", "Rock", "Pop", "Instrumental"},
-            {"Urban", "Rural", "Space", "Fantasy"},
-            {"Linear", "Non-linear", "Multiple plots", "Single plot"},
-            {"Steven Spielberg", "Christopher Nolan", "Quentin Tarantino", "Martin Scorsese"},
-            {"Short", "Medium", "Long", "Epic"},
-            {"Classic", "Modern", "Future", "Historical"}
+            {"Urban", "Rural", "Fantasy", "Historical"},
+            {"1990s", "2000", "2010s", "2020s"},
+            {"Happy", "Sad", "Excited", "Relaxed"},
+            {"Adventure", "Romance", "Mystery", "Thriller"}
     };
 
-    private TextView[] indicators = new TextView[10];
+    private TextView[] indicators = new TextView[5];
     private Button finishButton;
     private HashMap<Integer, String> selectedAnswers = new HashMap<>();
 
@@ -73,11 +63,7 @@ public class QuestionnaireFragment extends Fragment {
         indicators[2] = view.findViewById(R.id.indicator_3);
         indicators[3] = view.findViewById(R.id.indicator_4);
         indicators[4] = view.findViewById(R.id.indicator_5);
-        indicators[5] = view.findViewById(R.id.indicator_6);
-        indicators[6] = view.findViewById(R.id.indicator_7);
-        indicators[7] = view.findViewById(R.id.indicator_8);
-        indicators[8] = view.findViewById(R.id.indicator_9);
-        indicators[9] = view.findViewById(R.id.indicator_10);
+
 
         // Set up listeners and initial state
         updateQuestion();
